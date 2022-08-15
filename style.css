@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.contentContainer{
+    display: flex;
+    height: 500px;
+    width: 1000px;
+    margin: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.sedanContainer{
+   display: flex;
+   flex-grow: 1;
+   flex-direction: column;
+    background-color: rgb(214, 138, 61);
+}
+
+.imgContainer{
+   height: 25%;
+    width: 90%;
+    margin-left: 10%;
+   display: flex;
+   align-items: center;
+}
+
+.title{
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: 700;
+  width: 90%;
+  height: 15%;
+    margin-left: 10%;
+   
+}
+
+
+.textContainer{
+    
+    width: 75%;
+    line-height: 30px;
+    margin-left: 10%;
+    
+    height: 25%;
+}
+
+.sedanText{
+    color: rgb(255, 191, 119);
+}
+
+.suvText{
+    color: rgb(128, 207, 214);
+}
+
+.luxuryText{
+    color: rgb(93, 138, 138);
+}
+
+.buttonContainer{
+    display: flex;
+    height: 35%;
+    width: 90%;
+    margin-left: 10%;
+    align-items: center;
+}
+
+button{
+height: 50px;
+width: 175px;
+border-radius: 30px;
+border: none;
+}
+
+
+.suvContainer{
+    background-color: rgb(45, 104, 112);
+    flex-grow: 1;
+}
+
+.luxuryContainer{
+    background-color: rgb(25, 63, 62);
+   flex-grow: 1;
+}
+
+.sedanButton{
+    color: rgb(214, 138, 61);
+}
+
+.suvButton{
+    color: rgb(45, 104, 112);
+}
+
+.luxuryButton{
+    color: rgb(25, 63, 62);
+}
+
+@media screen and (max-width: 577px) { 
+    .contentContainer{
+      flex-direction: column;
+      height: auto;
+    }
+    .suvContainer, .luxuryContainer, .sedanContainer{
+        width: 94%;
+        margin: auto;
+        height: 500px;
+    }
+}
